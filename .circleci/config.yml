@@ -16,7 +16,7 @@ jobs:
           command: |
             pip install --user --no-cache-dir -r requirements.txt
       - run:
-          command: pytest  test_hello_world
+          command: pytest test_hello_world
           name: Test
 
 workflows:
