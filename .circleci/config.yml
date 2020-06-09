@@ -16,8 +16,8 @@ jobs:
           command: |
             pip install --user --no-cache-dir -r requirements.txt
       - run:
-          command: pytest test_hello_world
-          name: Test
+          name: Run Tests
+          command: ~/.local/bin/pytest
 
 workflows:
   main:
