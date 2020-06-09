@@ -11,6 +11,10 @@ jobs:
       - python/load-cache
       - python/install-deps
       - python/save-cache
+       - run:
+          name: Install Python Dependencies
+          command: |
+            pip install --user --no-cache-dir -r requirements.txt
       - run:
           command: pytest  test_hello_world
           name: Test
